@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --Soft_orange: hsl(35, 77%, 62%);
+    --Soft_red: hsl(5, 85%, 63%);
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish_blue: hsl(233, 8%, 79%);
+    --Dark_grayish_blue: hsl(236, 13%, 42%);
+    --Very_dark_blue: hsl(240, 100%, 5%);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0px 190px 0px 190px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    
+    padding: 0px;
+}
+
+#navbar ul div {
+    display: flex;
+    gap: 25px;
+}
+
+#navbar ul div li {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul div li:hover {
+    color: var(--Soft_red);
+    transition: 300ms;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "image image aside"
+        "announce buttonart aside"
+        "chart1 chart2 chart3" 
+    ;
+    gap: 20px;
+}
+
+main img {
+    grid-area: image;
+    margin: 0;
+    height: 280px;
+}
+
+main #announce {
+    line-height: 50px;
+    grid-area: announce;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+main #button_art {
+    grid-area: buttonart;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 0px;
+    justify-content: space-between;
+
+}
+
+main #button_art p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 15px;
+    color: var(--Dark_grayish_blue);
+}
+
+main #button_art a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: var(--Off-white);
+    background-color: var(--Soft_red);
+}
+
+main #button_art a:hover {
+    color: var(--Off-white);
+    background-color: var(--Very_dark_blue);
+    transition: 300ms;
+}
+
+.button {
+    width: 170px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main aside {
+    grid-area: aside;
+}
+
+main aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main aside ul li {
+    padding: 15px;
+    background-color: var(--Very_dark_blue);
+    color: var(--Off-white);
+    width: 250px;
+}
+
+
+main aside h1  {
+    font-size: 30px;
+    color: var(--Soft_orange);
+    margin: 10px 0px 0px 0px;
+}
+
+main aside h2  {
+    font-size: 18px;
+}
+
+main aside h2:hover {
+    color: var(--Soft_orange);
+    transition: 300ms;
+}
+
+main aside p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--Grayish_blue);
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    opacity: 50%;
+    color: var(--Grayish_blue);
+}
+
+#chart1 {
+    grid-area: chart1;
+    margin-top: 50px;
+}
+
+#chart2 {
+    grid-area: chart2;
+    margin-top: 50px;
+}
+
+#chart3 {
+    grid-area: chart3;
+    margin-top: 50px;
+}
+
+section {
+    display: flex;
+}
+
+section img {
+    height: 120px;
+}
+
+section div {
+    margin-left: 15px;
+}
+
+section div h2{
+    margin: 0px;
+    padding: 0px;
+
+    color: var(--Grayish_blue);
+}
+
+section div h3{
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--Very_dark_blue);
+}
+
+section div h3:hover{
+    color: var(--Soft_red);
+    transition: 300ms;
+}
+
+section div p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 11px;
+    line-height: 20px;
+    color: var(--Very_dark_blue);
+}
